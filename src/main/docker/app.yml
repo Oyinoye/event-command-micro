@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  maxevent-app:
+    build: ../../..
+    container_name: maxevent-app
+    environment:
+    ports:
+      - 8087:8087

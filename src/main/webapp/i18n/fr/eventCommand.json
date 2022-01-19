@@ -1,0 +1,27 @@
+{
+  "maxeventApp": {
+    "eventCommand": {
+      "home": {
+        "title": "EventCommands",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Event Command",
+        "createOrEditLabel": "Créer ou éditer un Event Command",
+        "notFound": "Aucun Event Command trouvé"
+      },
+      "created": "Un nouveau Event Command a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Event Command avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Event Command avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Event Command {{ id }} ?"
+      },
+      "detail": {
+        "title": "Event Command"
+      },
+      "id": "ID",
+      "championID": "Champion ID",
+      "eventDateTime": "Event Date Time",
+      "eventPayload": "Event Payload",
+      "event": "Event"
+    }
+  }
+}

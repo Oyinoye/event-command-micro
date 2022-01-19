@@ -1,0 +1,35 @@
+{
+  "name": "EventCommand",
+  "fields": [
+    {
+      "fieldName": "championID",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "eventDateTime",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "eventPayload",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "event",
+      "fieldType": "MaxEvent",
+      "fieldValues": "ProspectSecured,TestScheduled,TestPassed,TestFailed,CreditRated,GuarantorReturned,Activated,VehicleAssigned,ContractEntered,Churned,Deactivated,HPExited"
+    }
+  ],
+  "relationships": [],
+  "javadoc": "Champion",
+  "entityTableName": "event_command",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["maxevent"],
+  "databaseType": "sql",
+  "changelogDate": "20220118233516"
+}
