@@ -3,7 +3,7 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { FindManyOptions, FindOneOptions } from 'typeorm';
 import { EventCommandDTO } from '../service/dto/event-command.dto';
 import { EventCommandMapper } from '../service/mapper/event-command.mapper';
-import { EventCommandRepository } from '../repository/event-command.repository';
+import { EventCommandEntityRepository } from '../repository/event-command.repository';
 
 const relationshipNames = [];
 
@@ -12,7 +12,7 @@ export class EventCommandService {
     logger = new Logger('EventCommandService');
 
     constructor(
-        @InjectRepository(EventCommandRepository) private eventCommandEntityRepository: EventCommandRepository,
+        @InjectRepository(EventCommandEntityRepository) private eventCommandEntityRepository: EventCommandEntityRepository,
     ) {}
 
     async findById(id: number): Promise<EventCommandDTO | undefined> {
